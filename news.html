@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - BaiBus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1><span class="logo-bai">Bai</span><span class="logo-bus">Bus</span></h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="fares.html">Fares</a></li>
+                    <li><a href="news.html" class="active">News</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(107, 142, 105, 0.8), rgba(107, 142, 105, 0.8)), url('images/hero-bus.jpg'); background-size: cover; background-position: center; padding: 100px 0; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Latest News</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; opacity: 0.9;">Keep up to date with the latest service updates and community stories.</p>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-section" style="padding: 100px 0;">
+        <div class="container">
+            <div class="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+                <!-- News Item 1 -->
+                <article class="news-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="height: 200px; background: #8FB18C; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div style="padding: 30px;">
+                        <span style="color: var(--secondary-color); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Service Update • 15 Mar 2024</span>
+                        <h3 style="margin: 15px 0;">New Electric Buses Join the Fleet</h3>
+                        <p>We are excited to announce the arrival of 10 brand-new fully electric buses serving our city routes, furthering our commitment to sustainable travel.</p>
+                        <a href="#" style="color: var(--primary-color); font-weight: 600; display: inline-flex; align-items: center; gap: 10px;">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Item 2 -->
+                <article class="news-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="height: 200px; background: #3F5141; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div style="padding: 30px;">
+                        <span style="color: var(--secondary-color); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Timetables • 10 Mar 2024</span>
+                        <h3 style="margin: 15px 0;">Easter Weekend Service Changes</h3>
+                        <p>Planning to travel over the Easter bank holiday? Check our revised holiday schedules to ensure you get to your destination on time.</p>
+                        <a href="#" style="color: var(--primary-color); font-weight: 600; display: inline-flex; align-items: center; gap: 10px;">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- News Item 3 -->
+                <article class="news-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="height: 200px; background: #E2E8E1; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-size: 3rem;">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div style="padding: 30px;">
+                        <span style="color: var(--secondary-color); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Community • 05 Mar 2024</span>
+                        <h3 style="margin: 15px 0;">Driver of the Year Announced</h3>
+                        <p>Congratulations to David Smith for winning our annual Driver of the Year award, recognized for his exceptional customer service and safety record.</p>
+                        <a href="#" style="color: var(--primary-color); font-weight: 600; display: inline-flex; align-items: center; gap: 10px;">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter" style="margin-top: 80px; background: var(--primary-color); padding: 60px; border-radius: 20px; color: white; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
+                <div style="flex: 2; min-width: 300px;">
+                    <h2 style="color: white; text-align: left; margin-bottom: 20px;">Stay Informed</h2>
+                    <p style="opacity: 0.9;">Subscribe to our newsletter for the latest service news, travel offers, and community updates delivered straight to your inbox.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <form style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Your Email Address" style="flex: 1; padding: 15px; border-radius: 8px; border: none; font-size: 1rem;">
+                        <button type="submit" class="btn-secondary" style="border: none; padding: 15px 30px; margin: 0;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Shared) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 40px; margin-bottom: 20px;">
+                <div class="footer-info">
+                    <h3 style="color: white; margin-bottom: 20px;">BaiBus</h3>
+                    <p style="color: rgba(255,255,255,0.7);">Providing reliable bus services across the country. Your journey, our priority.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="color: white; margin-bottom: 20px;">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" style="color: rgba(255,255,255,0.7); display: block; margin-bottom: 10px;">Home</a></li>
+                        <li><a href="services.html" style="color: rgba(255,255,255,0.7); display: block; margin-bottom: 10px;">Services</a></li>
+                        <li><a href="fares.html" style="color: rgba(255,255,255,0.7); display: block; margin-bottom: 10px;">Fares</a></li>
+                        <li><a href="contact.html" style="color: rgba(255,255,255,0.7); display: block; margin-bottom: 10px;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 style="color: white; margin-bottom: 20px;">Contact Us</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px;"><i class="fas fa-phone"></i> 0800 123 4567</p>
+                    <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-envelope"></i> info@baibus.co.uk</p>
+                </div>
+            </div>
+            <div class="footer-bottom" style="text-align: center; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+                <p>&copy; 2024 BaiBus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
