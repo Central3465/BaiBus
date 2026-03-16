@@ -102,6 +102,40 @@ if (hero) {
     });
 }
 
+// Counter Animation for Statistics
+const animateCounters = () => {
+    const counters = document.querySelectorAll('.stat-number');
+    
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = parseInt(counter.innerText.replace(/[^0-9]/g, ''));
+            const suffix = counter.innerText.replace(/[0-9]/g, '');
+            const count = parseInt(counter.getAttribute('data-count') || '0');
+            const increment = target / 100;
+            
+            if (count < target) {
+                counter.setAttribute('data-count', Math.ceil(count + increment));
+                counter.innerText = Math.ceil(count + increment) + suffix;
+                setTimeout(updateCount, 20);
+            } else {
+                counter.innerText = target + suffix;
+            }
+        };
+        
+        // Check if element is visible
+        const rect = counter.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            if (!counter.classList.contains('animated')) {
+                counter.classList.add('animated');
+                updateCount();
+            }
+        }
+    });
+};
+
+window.addEventListener('scroll', animateCounters);
+animateCounters(); // Run on load
+
 // Initialize animations on load
 window.addEventListener('load', () => {
     // Trigger initial scroll position check
